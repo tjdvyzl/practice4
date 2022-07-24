@@ -51,10 +51,11 @@ function LandingPage() {
 
                 {/* gridcards 사이에 빈 공간을 넣고 싶다면 gutter을 쓰기 */}
                 <Row gutter={[16,16]}>
-
+ 
                     {Movies && Movies.map((movie, index) => (
                         <React.Fragment key={index}>
                             <GridCards 
+                                landingPage
                                 image={movie.poster_path ? `${IMAGE_BASE_URL}w500${movie.poster_path}` : null}
                                 movieId={movie.id}
                                 movieName={movie.original_title}
