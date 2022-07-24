@@ -38,9 +38,9 @@ function LandingPage() {
             {/* Main Image*/}
             {MainMovieImage &&  // MainMovieImage가 있으면 오른쪽을 해라 라는 && 의미
                 <MainImage
-                image={`${IMAGE_BASE_URL}w1280${MainMovieImage.backdrop_path}`}
-                title={MainMovieImage.original_title}
-                text={MainMovieImage.overview}
+                    image={`${IMAGE_BASE_URL}w1280${MainMovieImage.backdrop_path}`}
+                    title={MainMovieImage.original_title}
+                    text={MainMovieImage.overview}
                 />
             }
             <div style={{width:'85%', margin:'1rem auto'}}>

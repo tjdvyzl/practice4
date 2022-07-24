@@ -3,7 +3,7 @@ import React from 'react';
 function MainImage(props) {
     return (
         <div style={{
-            background: `linear-gradient(to bottom, rgba(0,0,0,0)
+background: `linear-gradient(to bottom, rgba(0,0,0,0)
         39%,rgba(0,0,0,0)
         41%,rgba(0,0,0,0.65)
         100%),
@@ -12,7 +12,16 @@ function MainImage(props) {
             backgroundSize: '100%, cover',
             backgroundPosition: 'center, center',
             width: '100%',
-            position: 'relative'
+            position: 'relative',
+
+            // background: `linear-gradient(to bottom, rgba(0,0,0,0)
+            // 39%, rgba(0,0,0,0)
+            // 41%, rgba(0,0,0,0.65)
+            // 100%)`,
+            // backgroundColor: '#1c1c1c',
+            // backgroundImage: `url('${props.image}')`,
+            // backgroundSize: '100%, cover',
+            // backgroundPosition: 'center, center',
         }}>
             <div>
                 <div style={{ position: 'absolute', maxWidth: '500px', bottom: '2rem', marginLeft:'2rem' }}>
